@@ -1,7 +1,5 @@
 package deqo.fdup.mysimplestack;
 
-import sun.invoke.empty.Empty;
-
 import java.util.EmptyStackException;
 
 public interface SimpleStack {
