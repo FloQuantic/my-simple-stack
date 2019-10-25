@@ -1,30 +1,33 @@
 package deqo.fdup.mysimplestack;
 
 import java.util.EmptyStackException;
+import java.util.Stack;
 
 public class SimpleStackImpl implements SimpleStack {
+    private Stack<Item> maStack= new Stack<>();
+
     @Override
     public boolean isEmpty() {
-        return false;
+        return maStack.isEmpty();
     }
 
     @Override
     public int getSize() {
-        return 0;
+        return maStack.size();
     }
 
     @Override
     public void push(Item item) {
-
+        maStack.push(item);
     }
 
     @Override
     public Item peek() throws EmptyStackException {
-        return null;
+        return maStack.peek();
     }
 
     @Override
     public Item pop() throws EmptyStackException {
-        return null;
+        return maStack.pop();
     }
 }
