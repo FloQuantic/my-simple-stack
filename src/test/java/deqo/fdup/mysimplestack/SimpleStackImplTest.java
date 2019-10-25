@@ -55,9 +55,8 @@ public class SimpleStackImplTest {
     public void peek() {
         try{
             test = maStack.peek();
-        }catch(EmptyStackException emptyExc){
-            //assert(emptyExc.getMessage().contains("NullPointer"));
-        }
+            test.setMonInt(1);
+        }catch(EmptyStackException emptyExc){}
         assertEquals("peek(EmptyStack) doesn't throw Exception",0,test.getMonInt());
         assertEquals("peek(Stack[1])!=i1",i1,maStackI1.peek());
         assertEquals("peek(Stack[1,2])!=i2",i2,maStackI2.peek());
@@ -67,9 +66,8 @@ public class SimpleStackImplTest {
     public void pop() {
         try{
             test = maStack.pop();
-        }catch(EmptyStackException emptyExc){
-            //assert(emptyExc.getMessage().contains("NullPointer"));
-        }
+            test.setMonInt(1);
+        }catch(EmptyStackException emptyExc){}
         assertEquals("pop(EmptyStack) doesn't throw Exception !",0,test.getMonInt());
         assertEquals("pop(Stack[1])!=emptyStack",i1,maStackI1.pop());
         assertEquals("pop(Stack[1,2])!=Stack[1]",i2,maStackI2.pop());
