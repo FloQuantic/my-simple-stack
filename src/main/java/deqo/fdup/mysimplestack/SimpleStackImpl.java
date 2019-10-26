@@ -11,6 +11,8 @@ public class SimpleStackImpl implements SimpleStack {
         return maStack.isEmpty();
     }
 
+    //Modif to test
+
     @Override
     public int getSize() {
         return maStack.size();
